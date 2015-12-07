@@ -30,10 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.increment = new System.Windows.Forms.TextBox();
-            this.length = new System.Windows.Forms.TextBox();
-            this.angle = new System.Windows.Forms.TextBox();
-            this.number_of_lines = new System.Windows.Forms.TextBox();
+            this.textbox_increment = new System.Windows.Forms.TextBox();
+            this.textbox_length = new System.Windows.Forms.TextBox();
+            this.textbox_angle = new System.Windows.Forms.TextBox();
+            this.textbox_num_lines = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,10 +46,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.increment);
-            this.panel1.Controls.Add(this.length);
-            this.panel1.Controls.Add(this.angle);
-            this.panel1.Controls.Add(this.number_of_lines);
+            this.panel1.Controls.Add(this.textbox_increment);
+            this.panel1.Controls.Add(this.textbox_length);
+            this.panel1.Controls.Add(this.textbox_angle);
+            this.panel1.Controls.Add(this.textbox_num_lines);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -75,61 +75,65 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // increment
+            // textbox_increment
             // 
-            this.increment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.increment.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.increment.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.increment.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.increment.Location = new System.Drawing.Point(667, 16);
-            this.increment.Name = "increment";
-            this.increment.Size = new System.Drawing.Size(61, 26);
-            this.increment.TabIndex = 1;
-            this.increment.Text = "1";
-            this.increment.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.increment.KeyDown += new System.Windows.Forms.KeyEventHandler(this.increment_KeyDown);
+            this.textbox_increment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.textbox_increment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_increment.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textbox_increment.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textbox_increment.Location = new System.Drawing.Point(667, 16);
+            this.textbox_increment.Name = "textbox_increment";
+            this.textbox_increment.Size = new System.Drawing.Size(61, 26);
+            this.textbox_increment.TabIndex = 1;
+            this.textbox_increment.Text = "1";
+            this.textbox_increment.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textbox_increment.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_KeyDown);
+            this.textbox_increment.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
-            // length
+            // textbox_length
             // 
-            this.length.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.length.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.length.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.length.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.length.Location = new System.Drawing.Point(457, 16);
-            this.length.Name = "length";
-            this.length.Size = new System.Drawing.Size(61, 26);
-            this.length.TabIndex = 1;
-            this.length.Text = "2";
-            this.length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.length.KeyDown += new System.Windows.Forms.KeyEventHandler(this.increment_KeyDown);
+            this.textbox_length.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.textbox_length.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_length.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textbox_length.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textbox_length.Location = new System.Drawing.Point(457, 16);
+            this.textbox_length.Name = "textbox_length";
+            this.textbox_length.Size = new System.Drawing.Size(61, 26);
+            this.textbox_length.TabIndex = 1;
+            this.textbox_length.Text = "2";
+            this.textbox_length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textbox_length.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_KeyDown);
+            this.textbox_length.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
-            // angle
+            // textbox_angle
             // 
-            this.angle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.angle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.angle.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.angle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.angle.Location = new System.Drawing.Point(276, 16);
-            this.angle.Name = "angle";
-            this.angle.Size = new System.Drawing.Size(61, 26);
-            this.angle.TabIndex = 1;
-            this.angle.Text = "88";
-            this.angle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.angle.KeyDown += new System.Windows.Forms.KeyEventHandler(this.increment_KeyDown);
+            this.textbox_angle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.textbox_angle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_angle.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textbox_angle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textbox_angle.Location = new System.Drawing.Point(276, 16);
+            this.textbox_angle.Name = "textbox_angle";
+            this.textbox_angle.Size = new System.Drawing.Size(61, 26);
+            this.textbox_angle.TabIndex = 1;
+            this.textbox_angle.Text = "88";
+            this.textbox_angle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textbox_angle.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_KeyDown);
+            this.textbox_angle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
-            // number_of_lines
+            // textbox_num_lines
             // 
-            this.number_of_lines.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.number_of_lines.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.number_of_lines.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.number_of_lines.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.number_of_lines.Location = new System.Drawing.Point(104, 16);
-            this.number_of_lines.Name = "number_of_lines";
-            this.number_of_lines.Size = new System.Drawing.Size(61, 26);
-            this.number_of_lines.TabIndex = 1;
-            this.number_of_lines.Text = "100";
-            this.number_of_lines.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.number_of_lines.KeyDown += new System.Windows.Forms.KeyEventHandler(this.increment_KeyDown);
+            this.textbox_num_lines.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.textbox_num_lines.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_num_lines.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textbox_num_lines.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textbox_num_lines.Location = new System.Drawing.Point(104, 16);
+            this.textbox_num_lines.Name = "textbox_num_lines";
+            this.textbox_num_lines.Size = new System.Drawing.Size(61, 26);
+            this.textbox_num_lines.TabIndex = 1;
+            this.textbox_num_lines.Text = "100";
+            this.textbox_num_lines.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textbox_num_lines.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_KeyDown);
+            this.textbox_num_lines.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
             // label4
             // 
@@ -177,7 +181,7 @@
             // 
             // canvas
             // 
-            this.canvas.BackColor = System.Drawing.SystemColors.Desktop;
+            this.canvas.BackColor = System.Drawing.Color.Black;
             this.canvas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.canvas.ForeColor = System.Drawing.Color.White;
             this.canvas.Location = new System.Drawing.Point(0, 58);
@@ -207,10 +211,10 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox increment;
-        private System.Windows.Forms.TextBox length;
-        private System.Windows.Forms.TextBox angle;
-        private System.Windows.Forms.TextBox number_of_lines;
+        private System.Windows.Forms.TextBox textbox_increment;
+        private System.Windows.Forms.TextBox textbox_length;
+        private System.Windows.Forms.TextBox textbox_angle;
+        private System.Windows.Forms.TextBox textbox_num_lines;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
