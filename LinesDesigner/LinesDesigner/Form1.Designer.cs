@@ -87,6 +87,7 @@
             this.textbox_increment.TabIndex = 1;
             this.textbox_increment.Text = "1";
             this.textbox_increment.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textbox_increment.TextChanged += new System.EventHandler(this.textbox_TextChanged);
             this.textbox_increment.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_KeyDown);
             this.textbox_increment.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
@@ -102,6 +103,7 @@
             this.textbox_length.TabIndex = 1;
             this.textbox_length.Text = "2";
             this.textbox_length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textbox_length.TextChanged += new System.EventHandler(this.textbox_TextChanged);
             this.textbox_length.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_KeyDown);
             this.textbox_length.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
@@ -117,6 +119,7 @@
             this.textbox_angle.TabIndex = 1;
             this.textbox_angle.Text = "88";
             this.textbox_angle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textbox_angle.TextChanged += new System.EventHandler(this.textbox_TextChanged);
             this.textbox_angle.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_KeyDown);
             this.textbox_angle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
@@ -132,6 +135,7 @@
             this.textbox_num_lines.TabIndex = 1;
             this.textbox_num_lines.Text = "100";
             this.textbox_num_lines.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textbox_num_lines.TextChanged += new System.EventHandler(this.textbox_TextChanged);
             this.textbox_num_lines.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_KeyDown);
             this.textbox_num_lines.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 

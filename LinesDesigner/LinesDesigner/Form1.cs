@@ -99,5 +99,16 @@ namespace LinesDesigner
                 e.Handled = !char.IsNumber(e.KeyChar);
             }
         }
+
+        private void textbox_TextChanged(object sender, EventArgs e)
+        {
+            ///check if the textbox field is not empty
+
+            button1.Enabled = true;
+            if (textbox_num_lines.Text == String.Empty || textbox_angle.Text == String.Empty || textbox_length.Text == String.Empty || textbox_increment.Text == String.Empty)
+            {
+                button1.Enabled = false;
+            }
+        }
     }
 }
